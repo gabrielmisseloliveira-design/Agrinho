@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Recruta: Jogos de Combate Real</title>
+    <style>
+        /* Estilos Gerais e Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+            background-color: #f4f6f7;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #1b2a1a, #2c3e2b);
+            color: #0033fd;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #556b2f;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+        }
+
+        /* Container Principal */
+        .container {
+            display: flex;
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Menu de Navegação Lateral */
+        nav {
+            width: 280px;
+            background-color: #222;
+            padding: 30px 20px;
+        }
+
+        nav h3 {
+            color: #556b2f;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-bottom: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #bbb;
+            font-size: 0.95rem;
+            display: block;
+            transition: all 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            padding-left: 5px;
+        }
+
+        /* Área do Conteúdo Principal */
+        main {
+            flex: 1;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        section {
+            margin-bottom: 50px;
+            scroll-margin-top: 20px; /* Ajuda na ancoragem do menu */
+        }
+
+        h2 {
+            color: #1b2a1a;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #556b2f;
+            padding-bottom: 8px;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        /* Listas Estilizadas */
+        ul.topicos {
+            list-style-type: none;
+            margin: 20px 0;
+        }
+
+        ul.topicos li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        ul.topicos li::before {
+            content: "➔";
+            position: absolute;
+            left: 0;
+            color: #556b2f;
+            font-weight: bold;
+        }
+
+        /* Caixas de Alerta e Destaque */
+        .alerta-seguranca {
+            background-color: #fff5f5;
+            border-left: 5px solid #e74c3c;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .alerta-seguranca strong {
+            color: #c0392b;
+            display: block;
+            margin-bottom: 50px;
+            margin-bottom: 5px;
+        }
+
+        .dica-tatica {
+            background-color: #f0f7f4;
+            border-left: 5px solid #2e7d32;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .dica-tatica strong {
+            color: #1b5e20;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #111;
+            color: #777;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            border-top: 1px solid #222;
+        }
+
+        /* Responsividade para Telas Menores (Celulares) */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            nav {
+                width: 100%;
+                border-bottom: 1px solid #333;
+                padding: 20px;
+            }
+            main {
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Manual de Combate Real</h1>
+        <p>Aprenda a organizar e jogar simulações de guerra com segurança e estratégia</p>
+    </header>
+
+    <div class="container">
+        <nav>
+            <h3>Sumário Técnico</h3>
+            <ul>
+                <li><a href="#modalidades">1. Escolha da Modalidade</a></li>
+                <li><a href="#seguranca">2. Regras de Segurança</a></li>
+                <li><a href="#localizacao">3. Onde Jogar</a></li>
+                <li><a href="#modos">4. Modos de Jogo</a></li>
+                <li><a href="#taticas">5. Dicas de Combate</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="modalidades">
+                <h2>1. Escolha a sua Modalidade</h2>
+                <p>Trazer a experiência dos jogos virtuais de guerra para a realidade exige a escolha do equipamento correto. As três principais vertentes seguras e regulamentadas são:</p>
+                <ul class="topicos">
+                    <li><strong>Laser Tag:</strong> Totalmente eletrônico e indolor. Ótimo para iniciantes e arenas fechadas (CQB).</li>
+                    <li><strong>Paintball:</strong> Focado em ação rápida e dinamismo. Os impactos de tinta marcam a eliminação de forma incontestável.</li>
+                    <li><strong>Airsoft:</strong> Focado em simulação militar ultrarrealista (MilSim), utilizando réplicas e projéteis plásticos esféricos.</li>
+                </ul>
+            </section>
+
+            <section id="seguranca">
+                <h2>2. Protocolos de Segurança Obrigatórios</h2>
+                <p>Simulações de combate são esportes seguros, desde que as normas abaixo sejam seguidas à risca por todos os participantes sem exceção.</p>
+                
+                <div class="alerta-seguranca">
+                    <strong>⚠️ AVISO DE SEGURANÇA CRÍTICO:</strong>
+                    Nunca, sob hipótese alguma, remova os óculos de proteção ou a máscara facial enquanto estiver dentro da zona de jogo (baia de tiro). Um único impacto no olho pode causar danos irreversíveis.
+                </div>
+
+                <p>Além dos óculos, utilize sempre roupas de mangas compridas grossas, calçados fechados de cano alto (botas/coturnos) e luvas para amortecer os impactos.</p>
+            </section>
+
+            <section id="localizacao">
+                <h2>3. Escolha do Local Adequado</h2>
+                <p>É estritamente proibido e perigoso portar marcadores de paintball ou airsoft em locais públicos (parques, praças ou ruas) devido ao risco de pânico social.</p>
+                <p>Prefira sempre <strong>campos comerciais dedicados</strong>. Eles oferecem cenários limpos e preparados (barricadas, trincheiras), juízes treinados, cronagem de equipamentos (limitação de velocidade do tiro) e seguro médico.</p>
+            </section>
+
+            <section id="modos">
+                <h2>4. Modos de Jogo Clássicos</h2>
+                <p>Para dinamizar a partida, defina um objetivo claro antes do início da rodada:</p>
+                <ul class="topicos">
+                    <li><strong>Mata-Mata em Equipe:</strong> Eliminar todos os integrantes do time adversário.</li>
+                    <li><strong>Capturar a Bandeira:</strong> Infiltrar-se na base inimiga, pegar o objetivo e retornar à sua base sem ser atingido.</li>
+                    <li><strong>Operação de Resgate (VIP):</strong> Proteger um jogador desarmado até que ele alcance um ponto de extração seguro no mapa.</li>
+                </ul>
+            </section>
+
+            <section id="taticas">
+                <h2>5. Dicas de Combate e Sobrevivência</h2>
+                <p>Ganhar um combate na vida real depende muito mais de comunicação do que de mira apurada. Siga estes princípios básicos:</p>
+                
+                <div class="dica-tatica">
+                    <strong>💡 Fundamento Tático: Consciência Situacional</strong>
+                    Mova-se de cobertura em cobertura. Antes de avançar para a próxima parede ou árvore, certifique-se de que seus flancos estão protegidos e avise seu parceiro de equipe que você está progredindo no terreno.
+                </div>
+
+                <p>Mantenha a honestidade (Fair Play): Ao ser atingido, grite "Morto!", levante os braços, pegue seu pano de eliminação vermelho e dirija-se imediatamente para a Zona Segura.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Manual do Recruta - Conteúdo estritamente esportivo e recreativo.</p>
+    </footer>
+
+</body>
+</html>
